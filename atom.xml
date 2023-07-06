@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>NexT</title>
+  <title>以豹制豹的个人博客</title>
   
   
   <link href="https://theme-next.js.org/atom.xml" rel="self"/>
   
   <link href="https://theme-next.js.org/"/>
-  <updated>2023-07-06T07:02:16.454Z</updated>
+  <updated>2023-07-06T07:42:08.085Z</updated>
   <id>https://theme-next.js.org/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://theme-next.js.org/%E6%B5%8B%E8%AF%95%E7%94%A8%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>https://theme-next.js.org/%E6%B5%8B%E8%AF%95%E7%94%A8%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2023-07-06T14:59:36.000Z</published>
-    <updated>2023-07-06T07:02:16.454Z</updated>
+    <updated>2023-07-06T07:42:08.085Z</updated>
     
     <content type="html"><![CDATA[<p>这是一片测试用的博客</p>]]></content>
     
@@ -34,6 +34,8 @@
     
     
     
+    
+    <category term="测试" scheme="https://theme-next.js.org/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
