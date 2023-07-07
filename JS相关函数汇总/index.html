@@ -21,26 +21,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"theme-next.js.org","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.17.1/config.min.js"></script>
 
-    <meta name="description" content="用来记录平时学习上的一些收获">
-<meta property="og:type" content="website">
-<meta property="og:title" content="以豹制豹的个人博客">
-<meta property="og:url" content="https://theme-next.js.org/index.html">
+    <meta name="description" content="JS笔记及函数汇总记忆1.BrowswerWindow Properties （window属性）document (document对象)history (history对象，包含了用户在浏览器窗口访问过的URL)location (对象包含有关当前URL的信息)navigator (对象包含浏览器有关信息，可不使用window前缀)screen (对象包含客户端显示屏的信息) name (用于">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS相关函数汇总">
+<meta property="og:url" content="https://theme-next.js.org/JS%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E6%B1%87%E6%80%BB/index.html">
 <meta property="og:site_name" content="以豹制豹的个人博客">
-<meta property="og:description" content="用来记录平时学习上的一些收获">
+<meta property="og:description" content="JS笔记及函数汇总记忆1.BrowswerWindow Properties （window属性）document (document对象)history (history对象，包含了用户在浏览器窗口访问过的URL)location (对象包含有关当前URL的信息)navigator (对象包含浏览器有关信息，可不使用window前缀)screen (对象包含客户端显示屏的信息) name (用于">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-07-07T10:52:57.000Z">
+<meta property="article:modified_time" content="2023-07-07T02:53:09.563Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="JavaScript, Vue, Css, Html, NodeJs">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://theme-next.js.org/">
+<link rel="canonical" href="https://theme-next.js.org/JS%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E6%B1%87%E6%80%BB/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://theme-next.js.org/JS%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E6%B1%87%E6%80%BB/","path":"JS相关函数汇总/","title":"JS相关函数汇总"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>以豹制豹的个人博客</title>
+<title>JS相关函数汇总 | 以豹制豹的个人博客</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-43861RVV8R"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-43861RVV8R","only_pageview":false}</script>
@@ -77,7 +79,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">以豹制豹的个人博客</h1>
+      <p class="site-title">以豹制豹的个人博客</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -130,7 +132,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -143,6 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JS%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%87%BD%E6%95%B0%E6%B1%87%E6%80%BB%E8%AE%B0%E5%BF%86"><span class="nav-number">1.</span> <span class="nav-text">JS笔记及函数汇总记忆</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Browswer"><span class="nav-number">1.1.</span> <span class="nav-text">1.Browswer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Window-Properties-%EF%BC%88window%E5%B1%9E%E6%80%A7%EF%BC%89"><span class="nav-number">1.1.1.</span> <span class="nav-text">Window Properties （window属性）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Window-Methods-%EF%BC%88window%E6%96%B9%E6%B3%95%EF%BC%89"><span class="nav-number">1.1.2.</span> <span class="nav-text">Window Methods （window方法）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Basic-Objects"><span class="nav-number">1.2.</span> <span class="nav-text">2.Basic Objects</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Array-Methods-%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95"><span class="nav-number">1.2.1.</span> <span class="nav-text">Array Methods (数组方法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-Properties-And-Methods%EF%BC%88Math%E5%AF%B9%E8%B1%A1%E7%9B%B8%E5%85%B3%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95%EF%BC%89"><span class="nav-number">1.2.2.</span> <span class="nav-text">Math Properties And Methods（Math对象相关属性和方法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String-Methods-%EF%BC%88String%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%89"><span class="nav-number">1.2.3.</span> <span class="nav-text">String Methods （String对象方法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Global-Methods-%E5%85%A8%E5%B1%80%E6%96%B9%E6%B3%95"><span class="nav-number">1.2.4.</span> <span class="nav-text">Global Methods (全局方法)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM-Node"><span class="nav-number">1.3.</span> <span class="nav-text">DOM Node</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-Properties-%E8%8A%82%E7%82%B9%E5%B1%9E%E6%80%A7"><span class="nav-number">1.3.1.</span> <span class="nav-text">Node Properties (节点属性)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-Methods-%E8%8A%82%E7%82%B9%E6%96%B9%E6%B3%95"><span class="nav-number">1.3.2.</span> <span class="nav-text">Node Methods (节点方法)</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -183,110 +186,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://theme-next.js.org/hexo-theme-next/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpg">
-      <meta itemprop="name" content="John Doe">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="以豹制豹的个人博客">
-      <meta itemprop="description" content="用来记录平时学习上的一些收获">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 以豹制豹的个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-              <span class="post-sticky-flag" title="置顶">
-                <i class="fa fa-thumbtack"></i>
-              </span><span class="exturl post-title-link post-title-link-external" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWU=" itemprop="url">Welcome to the NexT Organization!<i class="fa fa-external-link-alt"></i></span>
-          
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2020-03-01 12:00:00" itemprop="dateCreated datePublished" datetime="2020-03-01T12:00:00Z">2020-03-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-07-07 02:41:31" itemprop="dateModified" datetime="2023-07-07T02:41:31Z">2023-07-07</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/hexo-theme-next/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="hexo-theme-next/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p> 欢迎来到以豹制豹的私人空间，这里用来分享和记录一些学习上的收获和笔记</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://theme-next.js.org/JS%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E6%B1%87%E6%80%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -300,13 +210,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 以豹制豹的个人博客">
+      <meta itemprop="name" content="JS相关函数汇总 | 以豹制豹的个人博客">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/JS%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">JS相关函数汇总</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          JS相关函数汇总
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -343,8 +253,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="JS笔记及函数汇总记忆"><a href="#JS笔记及函数汇总记忆" class="headerlink" title="JS笔记及函数汇总记忆"></a><a href="https%EF%BC%9A//www.w3cschool.cn/javascript/dict">JS笔记及函数汇总记忆</a></h1><h2 id="1-Browswer"><a href="#1-Browswer" class="headerlink" title="1.Browswer"></a>1.Browswer</h2><h3 id="Window-Properties-（window属性）"><a href="#Window-Properties-（window属性）" class="headerlink" title="Window Properties （window属性）"></a>Window Properties （window属性）</h3><p>document (document对象)<br>history (history对象，包含了用户在浏览器窗口访问过的URL)<br>location (对象包含有关当前URL的信息)<br>navigator (对象包含浏览器有关信息，可不使用window前缀)<br>screen (对象包含客户端显示屏的信息)</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="JS笔记及函数汇总记忆"><a href="#JS笔记及函数汇总记忆" class="headerlink" title="JS笔记及函数汇总记忆"></a><a href="https%EF%BC%9A//www.w3cschool.cn/javascript/dict">JS笔记及函数汇总记忆</a></h1><h2 id="1-Browswer"><a href="#1-Browswer" class="headerlink" title="1.Browswer"></a>1.Browswer</h2><h3 id="Window-Properties-（window属性）"><a href="#Window-Properties-（window属性）" class="headerlink" title="Window Properties （window属性）"></a>Window Properties （window属性）</h3><p>document (document对象)<br>history (history对象，包含了用户在浏览器窗口访问过的URL)<br>location (对象包含有关当前URL的信息)<br>navigator (对象包含浏览器有关信息，可不使用window前缀)<br>screen (对象包含客户端显示屏的信息)</p>
 <p>name (用于设置和存放窗口名称)<br>parent (返回当前窗口的父窗口的window对象)<br>opener (返回对创建该窗口的window对象的引用，用于window.open()方法创建的窗口)<br>self (返回对窗口自身的只读引用)</p>
 <p>innerHeight (窗口文档显示区域的高度)<br>innerWidth (窗口文档显示区域的宽度)<br>outerHeight (窗口外部高度，包括所有元素如滚动栏工具栏)<br>outerWidth (窗口内部高度，包括所有元素如滚动栏工具栏)<br>closed (监控窗口是否关闭)<br>pageXOffset (当前页相对窗口显示区左上角的X位置)<br>pageYOffset (当前页相对窗口显示区左上角的Y位置)<br>screenLeft (返回窗口相对于屏幕的X坐标)<br>screenTop (返回窗口相对于屏幕的Y坐标)（IE不支持）<br>screenX (返回窗口相对于屏幕的X坐标)<br>screenY (返回窗口相对于屏幕的Y坐标)（火狐不支持）</p>
 <h3 id="Window-Methods-（window方法）"><a href="#Window-Methods-（window方法）" class="headerlink" title="Window Methods （window方法）"></a>Window Methods （window方法）</h3><p>alert() ：显示一个指定消息和确认按钮的警告框<br>confirm() ：显示一个带有指定消息和确认和取消按钮的对话框<br>prompt() ：显示可以提示用户进行输入的对话框</p>
@@ -366,7 +275,6 @@
 <p>isNaN() ：是否不是数字<br>Number() ：将参数转化为数字，若不能则返回NaN<br>String() ：把对象转化为字符串</p>
 <p>parseFloat() ：字符串首个为数字时，返回从左到右检索出的浮点数。若第首个不是数字则返回NaN<br>parseInt(string, radix) ：可解析一个字符串，并返回一个整数。&quot;0x&quot;开头时，解析为16进制</p>
 <h2 id="DOM-Node"><a href="#DOM-Node" class="headerlink" title="DOM Node"></a>DOM Node</h2><h3 id="Node-Properties-节点属性"><a href="#Node-Properties-节点属性" class="headerlink" title="Node Properties (节点属性)"></a>Node Properties (节点属性)</h3><h3 id="Node-Methods-节点方法"><a href="#Node-Methods-节点方法" class="headerlink" title="Node Methods (节点方法)"></a>Node Methods (节点方法)</h3>
-      
     </div>
 
     
@@ -374,92 +282,18 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
+        
 
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://theme-next.js.org/%E6%B5%8B%E8%AF%95%E7%94%A8%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpg">
-      <meta itemprop="name" content="John Doe">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="以豹制豹的个人博客">
-      <meta itemprop="description" content="用来记录平时学习上的一些收获">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 以豹制豹的个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%B5%8B%E8%AF%95%E7%94%A8%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">测试用新建博客</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-07-06 14:59:36 / 修改时间：07:42:08" itemprop="dateCreated datePublished" datetime="2023-07-06T14:59:36Z">2023-07-06</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/%E6%B5%8B%E8%AF%95%E7%94%A8%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="测试用新建博客/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>这是一片测试用的博客</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/%E6%B5%8B%E8%AF%95%E7%94%A8%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="测试用新建博客">
+                  <i class="fa fa-chevron-left"></i> 测试用新建博客
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -468,6 +302,12 @@
 
 
 
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
 </div>
   </main>
 

@@ -6,7 +6,7 @@
   <link href="https://theme-next.js.org/atom.xml" rel="self"/>
   
   <link href="https://theme-next.js.org/"/>
-  <updated>2023-07-06T07:42:08.085Z</updated>
+  <updated>2023-07-07T02:53:09.563Z</updated>
   <id>https://theme-next.js.org/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS相关函数汇总</title>
+    <link href="https://theme-next.js.org/JS%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E6%B1%87%E6%80%BB/"/>
+    <id>https://theme-next.js.org/JS%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E6%B1%87%E6%80%BB/</id>
+    <published>2023-07-07T10:52:57.000Z</published>
+    <updated>2023-07-07T02:53:09.563Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="JS笔记及函数汇总记忆"><a href="#JS笔记及函数汇总记忆" class="headerlink" title="JS笔记及函数汇总记忆"></a><a href="https%EF%BC%9A//www.w3cschool.cn/javascript/dict">JS笔记及函数汇总记忆</a></h1><h2 id="1-Browswer"><a href="#1-Browswer" class="headerlink" title="1.Browswer"></a>1.Browswer</h2><h3 id="Window-Properties-（window属性）"><a href="#Window-Properties-（window属性）" class="headerlink" title="Window Properties （window属性）"></a>Window Properties （window属性）</h3><p>document (document对象)<br>history (history对象，包含了用户在浏览器窗口访问过的URL)<br>location (对象包含有关当前URL的信息)<br>navigator (对象包含浏览器有关信息，可不使用window前缀)<br>screen (对象包含客户端显示屏的信息)</p><p>name (用于设置和存放窗口名称)<br>parent (返回当前窗口的父窗口的window对象)<br>opener (返回对创建该窗口的window对象的引用，用于window.open()方法创建的窗口)<br>self (返回对窗口自身的只读引用)</p><p>innerHeight (窗口文档显示区域的高度)<br>innerWidth (窗口文档显示区域的宽度)<br>outerHeight (窗口外部高度，包括所有元素如滚动栏工具栏)<br>outerWidth (窗口内部高度，包括所有元素如滚动栏工具栏)<br>closed (监控窗口是否关闭)<br>pageXOffset (当前页相对窗口显示区左上角的X位置)<br>pageYOffset (当前页相对窗口显示区左上角的Y位置)<br>screenLeft (返回窗口相对于屏幕的X坐标)<br>screenTop (返回窗口相对于屏幕的Y坐标)（IE不支持）<br>screenX (返回窗口相对于屏幕的X坐标)<br>screenY (返回窗口相对于屏幕的Y坐标)（火狐不支持）</p><h3 id="Window-Methods-（window方法）"><a href="#Window-Methods-（window方法）" class="headerlink" title="Window Methods （window方法）"></a>Window Methods （window方法）</h3><p>alert() ：显示一个指定消息和确认按钮的警告框<br>confirm() ：显示一个带有指定消息和确认和取消按钮的对话框<br>prompt() ：显示可以提示用户进行输入的对话框</p><p>focus() ：设置焦点 （可以给DOM元素设置）<br>blur() ：把键盘焦点从顶层窗口移开 （可以清除DOM元素焦点）<br>close() ：关闭浏览器窗口<br>open() ：打开一个新的浏览器窗口或者查找一个已命名的窗口</p><p>print() ：打印当前浏览器窗口</p><p>setInterval() ：设置定时器<br>clearInterval() ：清除定时器<br>setTimeout() ：设置延时器<br>clearTimeout() ：清除延时器</p><p>moveBy() ：相对窗口当前坐标移动窗口<br>moveTo() ：把窗口移动到相对左上角的指定坐标<br>resizeBy() ：<br>resizeTo() ：窗口大小重新设置</p><p>scrollBy(x,y) ：可以把内容滚动到指定的像素数,x向右滚动像素，y向下滚动像素<br>scrollTo(x,y) ：可以把内动滚动到指定坐标</p><h2 id="2-Basic-Objects"><a href="#2-Basic-Objects" class="headerlink" title="2.Basic Objects"></a>2.Basic Objects</h2><h3 id="Array-Methods-数组方法"><a href="#Array-Methods-数组方法" class="headerlink" title="Array Methods (数组方法)"></a>Array Methods <span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvQXJyYXkvZmlsdGVy">(数组方法)<i class="fa fa-external-link-alt"></i></span></h3><p>concat(array2,...) ：链接两个或者多个数组，返回被连接数组的一个副本<br>indexOf(item,start) ：查找数组中首个出现的匹配项，或者字符串中首个出现的值<br>lastIndexOf(item,start) ：找最后一个匹配项<br>join(separator) ：把数组元素链接成一个字符串，参数为链接符号，默认逗号<br>pop() ：移除数组最后一个元素，返回移除的元素<br>shift() ：移除数组第一个元素，返回移除的元素<br>push() ：向末尾添加一个或多个元素，并返回新数组长度<br>unshift() ：想数组开头添加一个或更多元素，并返回新数组长度<br>reverse() ：颠倒数组元素顺序<br>slice(start,end) ：提取数组中某一段的元素，并返回提取出的新数组<br>toString() ：把数组转化为字符串，并返回结果，用逗号连接<br>map() ：创建一个新数组，这个新数组由原数组中的每个元素都调用一次提供的函数后的返回值组成</p><h3 id="Math-Properties-And-Methods（Math对象相关属性和方法）"><a href="#Math-Properties-And-Methods（Math对象相关属性和方法）" class="headerlink" title="Math Properties And Methods（Math对象相关属性和方法）"></a>Math Properties And Methods（Math对象相关属性和方法）</h3><p>Math.E ：自然对数底数<br>Math.PI ：圆周率</p><p>Math.abs() ：返回一个数的绝对值<br>Math.sin() ：返回一个数的正弦（单位为弧度）<br>Math.asin() ：返回一个值的反正弦</p><p>Math.sqrt() ：返回一个数的平方根<br>Math.cbrt() ：返回一个数的立方根<br>Math.ceil() ：返回大于给定值的最小整数<br>Math.floor() ：返回小于给定值的最大整数<br>Math.round() ：返回最接近的整数</p><p>Math.max() ：返回输入参数的最大值<br>Math.min() ：返回输入参数的最小值</p><p>Math.random() ：返回一个随机0-1中的浮点数（包括0,不包括1<br>Math.exp() ：返回 E 的 x 次幂的值, x为入参 </p><h3 id="String-Methods-（String对象方法）"><a href="#String-Methods-（String对象方法）" class="headerlink" title="String Methods （String对象方法）"></a>String Methods （String对象方法）</h3><p>charAt() ：返回指定位置的字符<br>charCodeAt() ：返回指定位置字符的Unicode编码<br>fromCharCode() ：将指定Unicode编码转化为对应字符<br>match(reg) ：在字符串中找到指定的值，可以用正则匹配<br>replace(str1,str2) ：字符串全局替换，将st1替换为str2<br>search(reg) ：检索字符串中指定的子字符串，或者与正则表达式相匹配的子字符串，返回第一个所在位置<br>split(separator) ：将字符串分割，separator为分割标志，默认每个字符都被分割<br>substr(start,length) ：在字符串中抽取，从下标开始的指定数目的字符<br>substring(from,to) ：提取两个指定下标之间的字符，包括开始字符，但不包括结束字符<br>toLowerCase() ：将字符串转换为小写<br>toUpperCase() ：将字符串转换为大写</p><h3 id="Global-Methods-全局方法"><a href="#Global-Methods-全局方法" class="headerlink" title="Global Methods (全局方法)"></a>Global Methods (全局方法)</h3><p>encodeURL(url) ：对url编码进行编码，url中的特殊字符不会被编码，如&#x2F;?<br>decodeURL(url) ：对url编码进行解码</p><p>encodeURLComponent() ：对字符串编码，全部编码为ASCLL码，除了 - _ . ! ~ * &#39; ( )<br>decodeURLComponent() ；对应解码</p><p>escape() ：字符串编码，除了ASCLL和* @ - _ + . &#x2F;<br>unescape() ：解码</p><p>isNaN() ：是否不是数字<br>Number() ：将参数转化为数字，若不能则返回NaN<br>String() ：把对象转化为字符串</p><p>parseFloat() ：字符串首个为数字时，返回从左到右检索出的浮点数。若第首个不是数字则返回NaN<br>parseInt(string, radix) ：可解析一个字符串，并返回一个整数。&quot;0x&quot;开头时，解析为16进制</p><h2 id="DOM-Node"><a href="#DOM-Node" class="headerlink" title="DOM Node"></a>DOM Node</h2><h3 id="Node-Properties-节点属性"><a href="#Node-Properties-节点属性" class="headerlink" title="Node Properties (节点属性)"></a>Node Properties (节点属性)</h3><h3 id="Node-Methods-节点方法"><a href="#Node-Methods-节点方法" class="headerlink" title="Node Methods (节点方法)"></a>Node Methods (节点方法)</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;JS笔记及函数汇总记忆&quot;&gt;&lt;a href=&quot;#JS笔记及函数汇总记忆&quot; class=&quot;headerlink&quot; title=&quot;JS笔记及函数汇总记忆&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https%EF%BC%9A//www.w3cschool.cn/javascript/</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>测试用新建博客</title>
@@ -44,14 +64,15 @@
     <link href="https://theme-next.js.org/hexo-theme-next/"/>
     <id>https://theme-next.js.org/hexo-theme-next/</id>
     <published>2020-03-01T12:00:00.000Z</published>
-    <updated>2023-07-03T03:50:27.000Z</updated>
+    <updated>2023-07-07T02:41:31.529Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to the <a href="/docs/">NexT</a> documentation site! NexT is a high quality elegant theme for <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>. It is crafted from scratch, with love.</p><h3 id="User-Guide"><a href="#User-Guide" class="headerlink" title="User Guide"></a>User Guide</h3><p>It&#39;s easy to set up NexT theme. Just follow <a href="/docs/getting-started/">documentation</a> and create your personal website!</p><h3 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h3><ul><li>Visit the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvYXdlc29tZS1uZXh0">Awesome NexT<i class="fa fa-external-link-alt"></i></span> list to share plugins and tutorials with other users.</li><li>Join our <span class="exturl" data-url="aHR0cHM6Ly9naXR0ZXIuaW0vaGV4by1uZXh0">Gitter<i class="fa fa-external-link-alt"></i></span> chats.</li><li><span class="exturl" data-url="aHR0cHM6Ly9jcm93ZGluLmNvbS9wcm9qZWN0L2hleG8tdGhlbWUtbmV4dA==">Add or improve translation<i class="fa fa-external-link-alt"></i></span> in few seconds.</li><li>Report a bug in <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2lzc3Vlcy9uZXc/YXNzaWduZWVzPSZsYWJlbHM9QnVnJnRlbXBsYXRlPWJ1Zy1yZXBvcnQubWQ=">GitHub Issues<i class="fa fa-external-link-alt"></i></span>.</li><li>Request a new feature on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2lzc3Vlcy9uZXc/YXNzaWduZWVzPSZsYWJlbHM9RmVhdHVyZStSZXF1ZXN0JnRlbXBsYXRlPWZlYXR1cmUtcmVxdWVzdC5tZA==">GitHub<i class="fa fa-external-link-alt"></i></span>.</li><li>Vote for <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2lzc3Vlcz9xPWlzOm9wZW4raXM6aXNzdWUrbGFiZWw6JTIyRmVhdHVyZStSZXF1ZXN0JTIy">popular feature requests<i class="fa fa-external-link-alt"></i></span>.</li></ul>]]></content>
+    <content type="html"><![CDATA[<p> 欢迎来到以豹制豹的私人空间，这里用来分享和记录一些学习上的收获和笔记</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to the &lt;a href=&quot;/docs/&quot;&gt;NexT&lt;/a&gt; documentation site! NexT is a high quality elegant theme for &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0</summary>
+    <summary type="html">&lt;p&gt; 欢迎来到以豹制豹的私人空间，这里用来分享和记录一些学习上的收获和笔记&lt;/p&gt;
+</summary>
       
     
     
